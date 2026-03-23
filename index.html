@@ -3,302 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Resmi Desa Tompasobaru Satu</title>
+    <title>Beranda - Desa Tompasobaru Satu</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
-        
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         .glass-morphism {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
         .hero-gradient {
-            /* Background utama biarkan ilustrasi pemandangan agar tulisan tetap terbaca jelas */
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1500382017468-9049fee74a62?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url('img/IMG_7372.jpg');
             background-size: cover;
             background-position: center;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen">
 
     <nav class="fixed w-full z-50 glass-morphism shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter text-emerald-700">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row md:justify-between md:items-center gap-3 md:gap-0">
+            <div class="text-2xl font-bold tracking-tighter text-red-700 shrink-0">
                 TOMPASOBARU<span class="text-slate-800"> SATU</span>
             </div>
-            <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest text-slate-600">
-                <a href="#" class="hover:text-emerald-600 transition">Beranda</a>
-                <a href="#profil" class="hover:text-emerald-600 transition">Profil</a>
-                <a href="#organisasi" class="hover:text-emerald-600 transition">Pemdes</a>
-                <a href="#potensi" class="hover:text-emerald-600 transition">Potensi</a>
-                <a href="#program" class="hover:text-emerald-600 transition">Program</a>
+            <div class="flex overflow-x-auto hide-scrollbar space-x-6 md:space-x-8 font-semibold text-sm uppercase tracking-widest pb-1 md:pb-0 whitespace-nowrap">
+                <a href="index.html" class="text-red-600">Beranda</a>
+                <a href="profil.html" class="text-slate-600 hover:text-red-600 transition">Profil</a>
+                <a href="organisasi.html" class="text-slate-600 hover:text-red-600 transition">Pemdes</a>
+                <a href="potensi.html" class="text-slate-600 hover:text-red-600 transition">Potensi</a>
+                <a href="program.html" class="text-slate-600 hover:text-red-600 transition">Program</a>
             </div>
         </div>
     </nav>
 
-    <header class="h-screen hero-gradient flex items-center justify-center text-center text-white px-4">
-        <div class="max-w-3xl pt-20">
-            <span class="uppercase tracking-[0.3em] text-sm mb-4 block text-emerald-300 font-bold">Portal Resmi Pemerintahan</span>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">Desa Tompasobaru Satu</h1>
-            <p class="text-lg md:text-xl mb-10 text-slate-100 font-light drop-shadow-md">Mewujudkan masyarakat Desa yang maju, berkepribadian, mandiri, dan berkelanjutan.</p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#profil" class="bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-emerald-700 transition shadow-xl">Pelajari Lebih Lanjut</a>
-            </div>
-        </div>
-    </header>
-
-    <section class="max-w-6xl mx-auto -mt-16 relative z-10 px-4">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl text-center border-b-4 border-emerald-500">
-                <h3 class="text-2xl md:text-3xl font-bold text-slate-800">1.826</h3>
-                <p class="text-slate-500 text-xs md:text-sm mt-2 uppercase tracking-wider">Total Penduduk</p>
-            </div>
-            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl text-center border-b-4 border-emerald-500">
-                <h3 class="text-2xl md:text-3xl font-bold text-slate-800">69,1%</h3>
-                <p class="text-slate-500 text-xs md:text-sm mt-2 uppercase tracking-wider">Kristen</p>
-            </div>
-            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl text-center border-b-4 border-emerald-500">
-                <h3 class="text-2xl md:text-3xl font-bold text-slate-800">30,5%</h3>
-                <p class="text-slate-500 text-xs md:text-sm mt-2 uppercase tracking-wider">Islam</p>
-            </div>
-            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl text-center border-b-4 border-emerald-500">
-                <h3 class="text-2xl md:text-3xl font-bold text-slate-800">0,27%</h3>
-                <p class="text-slate-500 text-xs md:text-sm mt-2 uppercase tracking-wider">Katolik</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="profil" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <span class="text-emerald-600 font-bold tracking-widest uppercase text-sm">Tentang Desa</span>
-                <h2 class="text-4xl font-bold mt-4 mb-6 text-slate-800">Sejarah & Visi Misi</h2>
-                <p class="text-slate-600 leading-relaxed mb-6">
-                    Desa Tompasobaru Satu adalah hasil pemekaran dari desa Tompasobaru yang terbagi menjadi dua desa. Diresmikan pada tahun 1978 dengan penunjukan pejabat Hukum Tua pertama, Bapak J.A Runtuwene.
-                </p>
-                <div class="grid grid-cols-1 gap-6">
-                    <div class="bg-emerald-50 p-6 rounded-xl border-l-4 border-emerald-500">
-                        <i class="fas fa-bullseye text-emerald-600 text-2xl mb-2"></i>
-                        <h4 class="font-bold text-slate-800 text-lg">Visi</h4>
-                        <p class="text-sm text-slate-600 mt-2 font-medium">"Mewujudkan masyarakat Desa Tompasobaru Satu yang maju dan berkepribadian."</p>
-                    </div>
-                    <div class="bg-emerald-50 p-6 rounded-xl border-l-4 border-emerald-500">
-                        <i class="fas fa-rocket text-emerald-600 text-2xl mb-2"></i>
-                        <h4 class="font-bold text-slate-800 text-lg">Misi</h4>
-                        <ul class="text-sm text-slate-600 mt-2 space-y-2 list-disc list-inside">
-                            <li>Mewujudkan Tatakelola Pemerintahan Desa Yang Baik dan Benar.</li>
-                            <li>Mewujudkan Pembangunan Desa Yang Mandiri dan Berkelanjutan.</li>
-                            <li>Mewujudkan Keamanan dan Ketertiban Masyarakat Desa.</li>
-                            <li>Mewujudkan Pemberdayaan dan Peningkatan Ekonomi.</li>
-                            <li>Mewujudkan Bantuan Untuk Bencana Darurat dan Mendesak.</li>
-                        </ul>
-                    </div>
+    <main class="flex-grow">
+        <header class="h-screen hero-gradient flex items-center justify-center text-center text-white px-4">
+            <div class="max-w-3xl pt-20">
+                <span class="uppercase tracking-[0.3em] text-xs md:text-sm mb-4 block text-red-300 font-bold">Portal Resmi Pemerintahan</span>
+                <h1 class="text-4xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight drop-shadow-lg">Desa Tompasobaru Satu</h1>
+                <p class="text-base md:text-xl mb-10 text-slate-100 font-light drop-shadow-md px-4 md:px-0">Mewujudkan masyarakat Desa yang maju, berkepribadian, mandiri, dan berkelanjutan.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4 px-6 md:px-0">
+                    <a href="profil.html" class="bg-red-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-red-700 transition shadow-xl w-full md:w-auto">Pelajari Lebih Lanjut</a>
                 </div>
             </div>
-            <div class="relative">
-                <div class="w-full h-[600px] bg-slate-200 rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition duration-500 relative">
-                    <img src="img/peta desa.jpg" alt="Peta Desa Tompasobaru Satu" class="w-full h-full object-cover">
-                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-8">
-                        <h3 class="text-white font-bold text-xl mb-2">Batas Wilayah</h3>
-                        <ul class="text-slate-200 text-sm space-y-1">
-                            <li><span class="font-semibold text-emerald-400">Utara:</span> Torout</li>
-                            <li><span class="font-semibold text-emerald-400">Selatan:</span> Tompasobaru 2</li>
-                            <li><span class="font-semibold text-emerald-400">Timur:</span> Kinalawiran</li>
-                            <li><span class="font-semibold text-emerald-400">Barat:</span> Pinaesaan</li>
-                        </ul>
-                    </div>
+        </header>
+
+        <section class="max-w-6xl mx-auto -mt-16 relative z-10 px-4 mb-24">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 md:p-8 rounded-2xl shadow-xl text-center border-b-4 border-red-500">
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-800">1.826</h3>
+                    <p class="text-slate-500 text-[10px] md:text-sm mt-1 md:mt-2 uppercase tracking-wider">Penduduk</p>
+                </div>
+                <div class="bg-white p-4 md:p-8 rounded-2xl shadow-xl text-center border-b-4 border-red-500">
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-800">69,17%</h3>
+                    <p class="text-slate-500 text-[10px] md:text-sm mt-1 md:mt-2 uppercase tracking-wider">Kristen</p>
+                </div>
+                <div class="bg-white p-4 md:p-8 rounded-2xl shadow-xl text-center border-b-4 border-red-500">
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-800">30,56%</h3>
+                    <p class="text-slate-500 text-[10px] md:text-sm mt-1 md:mt-2 uppercase tracking-wider">Islam</p>
+                </div>
+                <div class="bg-white p-4 md:p-8 rounded-2xl shadow-xl text-center border-b-4 border-red-500">
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-800">0,27%</h3>
+                    <p class="text-slate-500 text-[10px] md:text-sm mt-1 md:mt-2 uppercase tracking-wider">Katolik</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section id="organisasi" class="py-24 bg-white px-6">
-        <div class="max-w-7xl mx-auto text-center mb-16">
-            <span class="text-emerald-600 font-bold tracking-widest uppercase text-sm">Struktur Organisasi</span>
-            <h2 class="text-4xl font-bold mt-2 text-slate-800">Pemerintah Desa</h2>
-            <div class="w-20 h-1 bg-emerald-500 mx-auto mt-6 rounded-full"></div>
-        </div>
-        
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            <div class="group bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-xl transition duration-300 text-center">
-                <img src="img/HUKUM TUA.jpeg" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-emerald-100 group-hover:ring-emerald-500 transition-all">
-                <h3 class="text-lg font-bold text-slate-800">Selfie Iroth, S.Pd</h3>
-                <p class="text-emerald-600 font-bold text-xs uppercase tracking-wide mt-1">Hukum Tua</p>
-            </div>
-            <div class="group bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-xl transition duration-300 text-center">
-                <img src="img/SEKDES.jpg" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-slate-100 group-hover:ring-slate-300 transition-all">
-                <h3 class="text-lg font-bold text-slate-800">Cakhra Brandon M.</h3>
-                <p class="text-emerald-600 font-bold text-xs uppercase tracking-wide mt-1">Sekretaris Desa</p>
-            </div>
-            <div class="group bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-xl transition duration-300 text-center">
-                <img src="img/KAUR TATA USAHA DAN UMUM.jpg" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-slate-100 group-hover:ring-slate-300 transition-all">
-                <h3 class="text-lg font-bold text-slate-800">Megy Paoky</h3>
-                <p class="text-emerald-600 font-bold text-xs uppercase tracking-wide mt-1">Kaur TU & Umum</p>
-            </div>
-
-            <div class="group bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-xl transition duration-300 text-center">
-                <img src="https://ui-avatars.com/api/?name=Fianne+Rumaondor&background=0f172a&color=fff&size=150" class="w-24 h-24 rounded-full mx-auto mb-4 ring-4 ring-slate-100 group-hover:ring-slate-300 transition-all">
-                <h3 class="text-lg font-bold text-slate-800">Fianne Rumaondor</h3>
-                <p class="text-emerald-600 font-bold text-xs uppercase tracking-wide mt-1">Kaur Keuangan</p>
-            </div>
-            <div class="group bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-xl transition duration-300 text-center">
-                <img src="https://ui-avatars.com/api/?name=Ratna+Lapalempa&background=0f172a&color=fff&size=150" class="w-24 h-24 rounded-full mx-auto mb-4 ring-4 ring-slate-100 group-hover:ring-slate-300 transition-all">
-                <h3 class="text-lg font-bold text-slate-800">Ratna Lapalempa</h3>
-                <p class="text-emerald-600 font-bold text-xs uppercase tracking-wide mt-1">Kasi Pemerintahan</p>
-            </div>
-            <div class="group bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-xl transition duration-300 text-center">
-                <img src="https://ui-avatars.com/api/?name=Fanny+Rumondor&background=0f172a&color=fff&size=150" class="w-24 h-24 rounded-full mx-auto mb-4 ring-4 ring-slate-100 group-hover:ring-slate-300 transition-all">
-                <h3 class="text-lg font-bold text-slate-800">Fanny Rumondor</h3>
-                <p class="text-emerald-600 font-bold text-xs uppercase tracking-wide mt-1">Kasi Kesejahteraan</p>
-            </div>
-            <div class="group bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-xl transition duration-300 text-center">
-                <img src="https://ui-avatars.com/api/?name=Joan+Sepang&background=0f172a&color=fff&size=150" class="w-24 h-24 rounded-full mx-auto mb-4 ring-4 ring-slate-100 group-hover:ring-slate-300 transition-all">
-                <h3 class="text-lg font-bold text-slate-800">Joan Sepang</h3>
-                <p class="text-emerald-600 font-bold text-xs uppercase tracking-wide mt-1">Staf Desa</p>
-            </div>
-        </div>
-
-        <div class="max-w-4xl mx-auto bg-slate-50 p-8 rounded-3xl border border-slate-100">
-            <h3 class="text-xl font-bold text-center text-slate-800 mb-6">Daftar Kepala Jaga</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm font-medium text-slate-700 text-center">
-                <div class="p-3 bg-white rounded-lg shadow-sm">1. Fatimah Abdurahim</div>
-                <div class="p-3 bg-white rounded-lg shadow-sm">2. Jembrif Ruaw</div>
-                <div class="p-3 bg-white rounded-lg shadow-sm">3. Jonly Wulur</div>
-                <div class="p-3 bg-white rounded-lg shadow-sm">4. Fendra Rembet</div>
-                <div class="p-3 bg-white rounded-lg shadow-sm">5. Noldy Umboh</div>
-                <div class="p-3 bg-white rounded-lg shadow-sm">6. Daniel Pinontoan</div>
-                <div class="p-3 bg-white rounded-lg shadow-sm">7. Stenly Najoan</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="potensi" class="py-24 bg-slate-900 px-6 text-white">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-            <div class="max-w-xl">
-                <span class="text-emerald-400 font-bold tracking-widest uppercase text-sm">Kekayaan Lokal</span>
-                <h2 class="text-4xl font-bold mt-2">Potensi Pertanian</h2>
-                <p class="text-slate-400 mt-4 text-sm">Hasil bumi melimpah yang menjadi penggerak ekonomi utama dan menunjang kebutuhan sehari-hari warga desa.</p>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="relative overflow-hidden rounded-3xl group h-96">
-                <img src="img/WhatsApp Image 2024-06-05 at 20.52.33.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90"></div>
-                <div class="absolute bottom-8 left-8 right-8">
-                    <h4 class="text-2xl font-bold mb-2 text-emerald-300">Pengolahan Lahan Pertanian</h4>
-                    <p class="text-slate-300 text-sm">Kegiatan masyarakat menanam bibit secara gotong royong untuk ketahanan pangan desa.</p>
-                </div>
-            </div>
-            <div class="relative overflow-hidden rounded-3xl group h-96">
-                <img src="img/WhatsApp Image 2024-06-05 at 20.52.32 (1).jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90"></div>
-                <div class="absolute bottom-8 left-8 right-8">
-                    <h4 class="text-2xl font-bold mb-2 text-emerald-300">Pemberdayaan Lahan & Tanaman Nilam</h4>
-                    <p class="text-slate-300 text-sm">Membersihkan dan mengelola lahan. Tanaman ini dibudidayakan untuk menghasilkan minyak nilam yang memiliki nilai jual tinggi.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="program" class="py-24 bg-slate-50 px-6">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-12">
-            
-            <div class="lg:col-span-2">
-                <span class="text-emerald-600 font-bold tracking-widest uppercase text-sm">Fokus Pembangunan</span>
-                <h2 class="text-4xl font-bold mt-2 mb-8 text-slate-800">Program Desa</h2>
-                
-                <div class="space-y-6">
-                    <article class="bg-white p-4 rounded-3xl shadow-sm flex flex-col md:flex-row gap-6 border-l-4 border-emerald-500 hover:shadow-md transition">
-                        <img src="img/026.jpg" class="w-full md:w-48 h-40 object-cover rounded-2xl">
-                        <div class="py-2 pr-4">
-                            <h3 class="text-xl font-bold mb-2 text-slate-800">Pembangunan Infrastruktur</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">Pembangunan fisik yang terus berjalan, seperti rehabilitasi balai desa, pemasangan jalan paving, serta pembangunan drainase guna kenyamanan aktivitas warga.</p>
-                        </div>
-                    </article>
-
-                    <article class="bg-white p-4 rounded-3xl shadow-sm flex flex-col md:flex-row gap-6 border-l-4 border-emerald-500 hover:shadow-md transition">
-                        <img src="img/WhatsApp Image 2026-03-14 at 00.13.16.jpeg" class="w-full md:w-48 h-40 object-cover rounded-2xl">
-                        <div class="py-2 pr-4">
-                            <h3 class="text-xl font-bold mb-2 text-slate-800">Bantuan Bencana & Kebutuhan Pokok</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">Penyaluran bantuan logistik dan sembako untuk menjaga ketahanan pangan keluarga, khususnya dalam merespons kebutuhan mendesak masyarakat.</p>
-                        </div>
-                    </article>
-
-                    <article class="bg-white p-4 rounded-3xl shadow-sm flex flex-col md:flex-row gap-6 border-l-4 border-emerald-500 hover:shadow-md transition">
-                        <img src="img/IMG_20230513_182327.jpg" class="w-full md:w-48 h-40 object-cover rounded-2xl object-top">
-                        <div class="py-2 pr-4">
-                            <h3 class="text-xl font-bold mb-2 text-slate-800">Bantuan Langsung Tunai (BLT)</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">Penyaluran BLT Dana Desa yang tepat sasaran sebagai wujud penanggulangan dampak ekonomi dan pemulihan kesejahteraan bagi keluarga yang membutuhkan.</p>
-                        </div>
-                    </article>
-
-                    <article class="bg-white p-6 rounded-3xl shadow-sm border-l-4 border-emerald-500 hover:shadow-md transition">
-                        <h3 class="text-xl font-bold mb-2 text-slate-800">Kesehatan Masyarakat & Posyandu</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">Menyelenggarakan kegiatan kesehatan rutin setiap bulan melalui Posyandu. Kegiatan ini juga berfokus pada langkah pencegahan dan penanggulangan <i>stunting</i> sejak dini.</p>
-                    </article>
-                </div>
-            </div>
-
-            <div class="bg-emerald-700 rounded-3xl p-8 text-white h-fit sticky top-24">
-                <h3 class="text-2xl font-bold mb-6">Pusat Layanan</h3>
-                <p class="text-emerald-100 text-sm mb-8">Punya pertanyaan, butuh layanan dokumen administrasi, atau pelaporan desa? Hubungi kami langsung.</p>
-                
-                <div class="space-y-6">
-                    <div class="flex items-start gap-4">
-                        <div class="bg-white/10 p-3 rounded-lg"><i class="fas fa-map-marker-alt text-xl"></i></div>
-                        <div>
-                            <h4 class="font-bold text-sm">Alamat Kantor</h4>
-                            <p class="text-emerald-100 text-xs mt-1 leading-relaxed">Balai Desa Tompasobaru Satu,<br>Kec. Tompasobaru, Kab. Minahasa Selatan</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <div class="bg-white/10 p-3 rounded-lg"><i class="fas fa-phone-alt text-xl"></i></div>
-                        <div>
-                            <h4 class="font-bold text-sm">Kontak (Sekretaris Desa)</h4>
-                            <p class="text-emerald-100 text-xs mt-1">+62 858-2783-3566</p>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="https://wa.me/6285827833566" target="_blank" class="block w-full text-center mt-8 bg-white text-emerald-800 py-3 rounded-xl font-bold text-sm hover:bg-emerald-50 transition shadow-lg">
-                    <i class="fab fa-whatsapp text-lg mr-2"></i> Hubungi via WhatsApp
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <footer class="bg-slate-900 text-white py-12 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 border-b border-slate-800 pb-12">
-            <div>
-                <h3 class="text-2xl font-bold mb-4 text-emerald-500">Tompasobaru Satu</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Website ini dikelola secara resmi sebagai sarana informasi, layanan, dan transparansi publik Pemerintah Desa Tompasobaru Satu.</p>
-            </div>
-            <div>
-                <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-slate-500">Tautan Penting</h4>
-                <ul class="space-y-3 text-slate-300 text-sm">
-                    <li><a href="#profil" class="hover:text-emerald-400 transition">Profil & Sejarah</a></li>
-                    <li><a href="#organisasi" class="hover:text-emerald-400 transition">Perangkat Desa</a></li>
-                    <li><a href="#potensi" class="hover:text-emerald-400 transition">Potensi Pertanian</a></li>
-                    <li><a href="#program" class="hover:text-emerald-400 transition">Program Kerja</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-slate-500">Jam Operasional Balai Desa</h4>
-                <div class="space-y-3 text-slate-300 text-sm">
-                    <p class="flex justify-between border-b border-slate-800 pb-2"><span>Senin - Jumat</span> <span>08.00 - 15.00</span></p>
-                    <p class="flex justify-between"><span>Sabtu - Minggu</span> <span class="text-red-400">Tutup</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-xs">
+    <footer class="bg-slate-900 text-white py-10 md:py-12 px-6 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-400 text-xs text-center md:text-left">
             <p>&copy; 2026 Desa Tompasobaru Satu. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
